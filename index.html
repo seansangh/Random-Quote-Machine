@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">  
+<link rel="stylesheet" href="style.css">
+<script>
+var myFunction= function(){
+   var i=1; var colorArr=[];
+   while(i<10){
+  colorArr.push(Math.floor(Math.random()*350))
+  var me= 'a'+ i;
+  var che= 'aa' + i;     
+  document.getElementById(me).setAttribute("style","display:none")
+  document.getElementById(che).setAttribute("style","display:none")      
+     i++
+   }
+  var numb= Math.floor(Math.random()*9)+1;
+  var numb2= numb-1;
+  var me= 'a'+ numb;
+  var che= 'aa' + numb;
+  document.getElementById(me).setAttribute("style","display:inline")
+  document.getElementById(che).setAttribute("style","display:block") 
+  document.getElementById('quote-box').style.background="linear-gradient(90deg, hsl("+colorArr[numb2]+",70%,50%), hsl("+colorArr[numb2]+",25%,25%))";
+  document.getElementById('new-quote').style.background=" hsl("+colorArr[numb2]+",50%,50%)";
+  document.getElementById('first').style.background=" hsl("+colorArr[numb2]+",50%,50%)";
+  document.getElementById('second').style.background=" hsl("+colorArr[numb2]+",50%,50%)";
+  document.getElementById('a'+numb).style.color=" hsl("+colorArr[numb2]+",50%,50%)";  
+  document.getElementById('aa'+numb).style.color=" hsl("+colorArr[numb2]+",75%,50%)"; 
+   }
+  </script>
+</head>
+
+<body>
+  <div class= "background" id="quote-box"><br />
+    <div id = "text" class="container-fluid">
+      <p class= "text" id="a1"><i class="fa fa-quote-left"></i> Get busy living or get busy dying.</p>
+      <p class= "text" id="a2"><i class="fa fa-quote-left"></i> The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.</p>
+            <p class= "text" id="a3"><i class="fa fa-quote-left"></i> When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us.</p>
+            <p class= "text" id="a4"><i class="fa fa-quote-left"></i> Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do.</p>
+            <p class= "text" id="a5"><i class="fa fa-quote-left"></i> When I dare to be powerful – to use my strength in the service of my vision, then it becomes less and less important whether I am afraid.</p>
+            <p class= "text" id="a6"><i class="fa fa-quote-left"></i> Great minds discuss ideas; average minds discuss events; small minds discuss people.</p>
+            <p class= "text" id="a7"><i class="fa fa-quote-left"></i> A successful man is one who can lay a firm foundation with the bricks others have thrown at him.</p>
+            <p class= "text" id="a8"><i class="fa fa-quote-left"></i> Those who dare to fail miserably can achieve greatly.</p>
+            <p class= "text" id="a9"><i class="fa fa-quote-left"></i> I can’t give you a sure-fire formula for success, but I can give you a formula for failure: try to please everybody all the time.</p>
+      <div id="author">
+      <h1 class="author" id="aa1">- Stephen King</h1>
+      <h1 class="author" id="aa2">- Mark Cain</h1>
+      <h1 class="author" id="aa3">- Helen Keller</h1>
+      <h1 class="author" id="aa4">- Mark Twain</h1>
+      <h1 class="author" id="aa5">- Audre Lorde</h1>
+      <h1 class="author" id="aa6">- Eleanor Roosevelt</h1>
+      <h1 class="author" id="aa7">- David Brinkley</h1>
+      <h1 class="author" id="aa8">- John F. Kennedy</h1>
+      <h1 class="author" id="aa9">- Herbert Bayard Swope</h1>
+    </div>
+      <div class="bot">
+      <div class="col-xs-6 me">
+        <a href="https://twitter.com/intent/tweet" id="tweet-quote"><i id="first" class="fa fa-twitter"></i></a> <a href="https://www.tumblr.com/"><i class="fa fa-tumblr" id="second"></i></a>
+      </div>
+      <div class="col-xs-6 me2">
+        <button class="btn" id="new-quote" onclick="myFunction()">New Quote</button>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>
