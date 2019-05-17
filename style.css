@@ -1,0 +1,78 @@
+#quote-box{
+  height: 100vh;
+  min-height: 400px;
+  background:linear-gradient(90deg,#00ccff,#006680);
+}
+
+#text{
+  postion: relative;
+  margin-left: auto;
+  background: white; 
+  width: 500px; 
+  margin-top: 100px; 
+  padding-left: 3%; 
+  padding-right: 3%; 
+  padding-top: 3%;
+}
+
+.text{
+  color: #007a99;
+  font-size: 24px;
+  font-family: calibria;
+}
+
+.author{
+  font-size: 14px; 
+  text-align: right; 
+  color: #00a3cc; 
+  font-family: georgia;
+}
+
+.fa-tumblr, .fa-twitter{
+  background: #00a3cc; 
+  color: white; 
+  padding: 12px; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  border-radius: 3px;
+}
+
+.fa-tumblr:hover,.fa-twitter:hover,.btn:hover{
+  cursor:pointer; 
+  background: #00ccff;
+}
+
+.me{
+  font-size: 20px;
+}
+
+#first{
+  margin-right: 5px;
+}
+
+.btn{
+  background: #00a3cc; 
+  color: white; 
+  margin-right: -15px;
+}
+
+.me2{
+  text-align: right;
+}
+
+.bot{
+  padding-top:15px; 
+  padding-bottom: 65px;
+}
+
+.author,.text{
+  display: none;
+}
+
+#first:hover,#second:hover,.btn:hover{
+  opacity:0.5;
+}
+
+#a1, #aa1{
+  display: block;
+}
